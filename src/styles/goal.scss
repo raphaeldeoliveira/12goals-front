@@ -1,0 +1,140 @@
+.goal__card {
+    width: 20%;
+    margin: auto;
+    border-radius: 10px;
+    border: 3px solid black;
+
+    .card__title {
+        text-align: center;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+        padding: 5px 0px;
+        border-bottom: 1px solid lightgray;
+    }
+
+    & > div > .card__todo_and_done {
+        display: flex;
+
+        div:first-child {
+            text-align: center;
+            padding: 5px 0px;
+        }
+
+        div:first-child {
+            width: 80%;
+        }
+
+        div:last-child {
+            width: 20%;
+            border-left: 1px solid lightgray;
+            text-align: center;
+        }
+    }
+
+    .card__progress_container {
+        
+        & > div {
+            display: flex;
+        }
+
+        //flex-direction: row;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        
+        div > div:first-child, div > div:last-child {
+            text-align: center;
+            padding: 5px 0px;
+        }
+
+        div > div:first-child {
+            width: 30%;
+            border-right: 1px solid black;
+        }
+
+        div > div:last-child {
+            width: 70%;
+            //margin: 4px;
+
+            & > div {
+                background-color: green;
+                border: none;
+                margin: 0px 4px;
+                height: 8.5px;
+            }
+        }
+    }
+
+    .card__metrics_container {
+        display: flex;
+
+        div:first-child {
+            width: 60%;
+            text-align: center;
+        }
+
+        div:nth-child(2), div:last-child {
+            width: 20%;
+            text-align: center; 
+            border-left: 1px solid black;
+        }
+    }
+
+    .goal_card {
+        display: flex;
+        border-top: 1px solid lightgray;
+
+        div:first-child {
+            width: 80%;
+            border-right: 1px solid lightgray;
+            padding: 6px 0px;
+            display: flex;
+            align-items: center;
+            
+            & > span {
+                margin: 0px 9px;
+            }
+        }
+
+        div:last-child {
+            width: 20%;
+            padding: 8px 0px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .card__edit_goals {
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+        padding: 6px 24px;
+
+        & > * {
+            width: 36px;
+            height: 36px;
+
+            &:hover {
+                cursor: pointer;
+
+            }
+        }
+
+        .icon--edit:hover {
+            color: rgb(12, 113, 101);
+            transition: color 500ms ease;
+        }
+
+        .icon--delete:hover {
+            color: rgb(47, 16, 187);
+            transition: color 500ms ease;
+        }
+
+        .icon--add:hover {
+            color: rgb(253, 192, 27);
+            transition: color 500ms ease;
+        }
+
+    }
+
+}
